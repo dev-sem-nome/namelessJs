@@ -1,0 +1,12 @@
+{
+	"nodes":[
+		{"id":"a52d6a055a60f900","x":-347,"y":-327,"width":250,"height":67,"type":"text","text":"# fluxo"},
+		{"id":"e85404cd4826c177","x":-480,"y":200,"width":215,"height":125,"type":"text","text":"# commands-composition"},
+		{"id":"e0b921e8124c7295","x":-347,"y":-60,"width":250,"height":60,"type":"text","text":"# cli-compostion"},
+		{"id":"c514676557e90486","x":-560,"y":460,"width":252,"height":70,"type":"text","text":"# import-all-the-command-files"}
+	],
+	"edges":[
+		{"id":"8d008ac55fdb83fb","fromNode":"e0b921e8124c7295","fromSide":"bottom","toNode":"e85404cd4826c177","toSide":"top"},
+		{"id":"07bcfeecae0545b5","fromNode":"e85404cd4826c177","fromSide":"bottom","toNode":"c514676557e90486","toSide":"top"}
+	]
+}

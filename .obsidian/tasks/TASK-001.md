@@ -1,0 +1,4 @@
+- [ ] cli
+	- [ ] make the cli composition-root-boostrap
+		- [ ] solve the CommandFile problema
+			-  
