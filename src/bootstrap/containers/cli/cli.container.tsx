@@ -19,8 +19,8 @@ export function CliBootstrap(): Cli {
 
   const cli : Cli = new Cli(
     parser,
-    resolver,
-    executeCommandAndReturnUseCase
+    executeCommandAndReturnUseCase,
+    resolver
   );
 
   return cli;

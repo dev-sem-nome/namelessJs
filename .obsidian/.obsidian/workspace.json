@@ -11,17 +11,14 @@
             "id": "ef90f03fc3b4e16c",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "tasks/flow.canvas",
-                "viewState": {
-                  "x": 193.180583269068,
-                  "y": 183.8800919622347,
-                  "zoom": -0.7302967159488359
-                }
+                "file": "days/10-23-2026.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "flow"
+              "icon": "lucide-file",
+              "title": "10-23-2026"
             }
           }
         ]
@@ -191,6 +188,8 @@
   "active": "ef90f03fc3b4e16c",
   "lastOpenFiles": [
     "tasks/TASK-001.md",
+    "days/10-23-2026.md",
+    "days",
     "tasks/flow.canvas",
     "sprints/Sprint-01.md",
     "sprints/Untitled.md",

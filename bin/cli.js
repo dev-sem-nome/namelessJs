@@ -1,10 +1,19 @@
 #!/usr/bin/env node
 
 import { spawnSync } from "node:child_process";
+import { fileURLToPath } from "node:url";
+import { dirname, resolve } from "node:path";
+
+const __dirname = dirname(fileURLToPath(import.meta.url));
+const root = resolve(__dirname, "..");
 
 const result = spawnSync(
-  "tsx",
-  ["./bin/cli.tsx", ...process.argv.slice(2)],
+  process.execPath,
+  [
+    resolve(root, "node_modules/tsx/dist/cli.mjs"),
+    resolve(root, "src/main.tsx"),
+    ...process.argv.slice(2)
+  ],
   {
     stdio: "inherit",
     shell: false

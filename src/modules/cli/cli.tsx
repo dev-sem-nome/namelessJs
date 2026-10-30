@@ -1,6 +1,8 @@
 import { ExecuteCommandAndReturnResultUseCase } from "./executor/app/use-cases/execute-command-and-return.use-case";
 import { ParserService } from "./parser/app/services/parser.service";
 import { ResolverService } from "./resolver/app/services/resolver.service";
+import { Command } from "./types/command";
+import { ParsedCommand } from "./types/parsedCommand";
 
 
 export class Cli {
@@ -19,14 +21,10 @@ export class Cli {
     this.executeCommandAndReturnUseCase = executeCommandAndReturnUseCase;
   }
 
-  run(command : string): CommandExecute {
-    try {
-      const parsedCommand : string = this.parser.parse(command);
-      const resolvedCommand = this.resolver.resolveCommand(parsedCommand);
+  run(command : string[]) {
+      const parsedCommand : ParsedCommand= this.parser.parse(command);
+      const resolvedCommand : Command = this.resolver.resolveCommand(parsedCommand);
       return this.executeCommandAndReturnUseCase.execute(resolvedCommand);
-    } catch (err) {
-      throw err;
-    }
   }
 
 };

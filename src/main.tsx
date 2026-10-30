@@ -1,3 +1,3 @@
 import { Bootstrap } from "./bootstrap/bootstrap.tsx";
 
-Bootstrap();
+Bootstrap(process.argv.slice(2));
